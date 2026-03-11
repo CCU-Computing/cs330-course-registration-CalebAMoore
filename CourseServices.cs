@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Net.Cache;
 
 namespace cs330_proj1
 {
@@ -57,7 +58,5 @@ namespace cs330_proj1
         /* As a freshman adviser, I want to see all the core goals which do not have any course offerings 
            for a given semester, so that I can work with departments to get some courses offered
            that students can take to meet those goals */
-
-        
-     }
-}
+      }  
+   }
