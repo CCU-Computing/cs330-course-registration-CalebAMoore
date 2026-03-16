@@ -10,10 +10,6 @@ namespace cs330_proj1
 
         //As a student, I want to search for course offerings that meet core goals 
         // so that I can register easily for courses that meet my program requirements
-         public List<CourseOffering> getOfferingsByGoalIdAndSemester(String theGoalId, String semester) {
-          //finish this method during the tutorial 
-          return null;
-        }
 
         //Add more service functions here, as needed, for the project
 
