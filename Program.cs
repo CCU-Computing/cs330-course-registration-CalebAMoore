@@ -12,7 +12,7 @@ namespace cs330courses
             Console.WriteLine("My name is Caleb Moore.");
             
             CourseServices service = new CourseServices();
-
+            
             Console.WriteLine("---------");
             List<CourseOffering> theList = service.getOfferingsByGoalIdAndSemester("CG2","Spring 2021");
             foreach(CourseOffering c in theList) {
@@ -20,7 +20,6 @@ namespace cs330courses
             }
             Console.WriteLine("---------");
 
-            
             // Make each of the next 6 sections of code work
             /*
             List<Course> theList2 = service.getCourses();
@@ -29,6 +28,7 @@ namespace cs330courses
             }
             Console.WriteLine("---------");
 
+            /*
             List<CourseOffering> theList3 = service.getCourseOfferingsBySemester("Fall 2020");
             foreach(CourseOffering c in theList3) {
                 Console.WriteLine(c);
