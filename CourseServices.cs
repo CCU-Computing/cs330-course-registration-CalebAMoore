@@ -8,10 +8,9 @@ namespace cs330_proj1
     {
         private CourseRepository repo = new CourseRepository();
 
-
         //As a student, I want to search for course offerings that meet core goals 
         // so that I can register easily for courses that meet my program requirements
-        
+
         //Add more service functions here, as needed, for the project
 
         /* As a student, I want to see all available courses so that I know what my options are */
@@ -23,6 +22,15 @@ namespace cs330_proj1
 
         /* As a student, I want to see all course offerings by semester, so that I can choose from what's
            available to register for next semester */
+         public List<CourseOffering> getCourseOfferingsBySemester(string Semesters) {
+            List<CourseOffering> theOfferings = new List<CourseOffering>();
+            foreach (CourseOffering co in repo.Offerings){
+               if (co.Semester.Equals(Semesters)) {
+                  theOfferings.Add(co);
+               }
+         }
+         return theOfferings;
+         }
 
         /* As a student I want to see all course offerings by semester and department so that I can 
         choose major courses to register for */
